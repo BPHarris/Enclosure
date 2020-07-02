@@ -1,7 +1,7 @@
 -- Output directory (e.g. Debug-windows-x86_64)
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-project "Parser"
+project "EnclosureParser"
     kind "SharedLib"
     language "C++"
 
@@ -25,7 +25,7 @@ project "Parser"
         cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
-        defines { "ENC_PLATFORM_WINDOWS" }
+        defines { "ENC_PLATFORM_WINDOWS", "ENC_BUILD_DLL" }
     
     filter "system:linux"
         systemversion "latest"

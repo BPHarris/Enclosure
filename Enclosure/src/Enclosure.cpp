@@ -8,22 +8,15 @@
 
 #include "Enclosure_pch.h"
 
-
-namespace Lexer {
-
-    __declspec(dllimport) void Lex();
-
-}
-
-namespace Parser {
-
-	__declspec(dllimport) void Parse();
-
-}
+#include "Lexer.h"
+#include "Parser.h"
 
 
 int main(int argc, char** argv)
 {
-	Lexer::Lex();
+	std::cout << "Enclosure\n";
+
+	while (true);
+
 	return 0;
 }

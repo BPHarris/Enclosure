@@ -7,8 +7,8 @@ workspace "Enclosure"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
-include "Lexer"
-include "Parser"
+include "EnclosureLexer"
+include "EnclosureParser"
 
 
 project "Enclosure"
@@ -26,11 +26,11 @@ project "Enclosure"
     files { "%{prj.name}/src/**.h", "%{prj.name}/src/**.cpp" }
 
     includedirs { 
-        "Lexer/src",
-        "Parser/src"
+        "EnclosureLexer/src",
+        "EnclosureParser/src"
     }
 
-    links { "Lexer", "Parser" }
+    links { "EnclosureLexer", "EnclosureParser" }
 
     filter "system:windows"
         cppdialect "C++17"

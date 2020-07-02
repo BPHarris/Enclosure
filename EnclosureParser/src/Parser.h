@@ -1,5 +1,5 @@
 /**
- * @file    Parser.h
+ * @file    EnclosureParser.h
  * @brief   Enclosure parser API
  * 
  * @author  BP Harris
@@ -9,8 +9,8 @@
 #pragma once
 
 
-namespace Parser {
+#include "Parser/TestParser.h"
 
-	__declspec(dllexport) void Parse();
 
-}
+// Include parser headers
+

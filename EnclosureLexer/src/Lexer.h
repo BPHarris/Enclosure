@@ -1,5 +1,5 @@
 /**
- * @file    Lexer.h
+ * @file    EnclosureLexer.h
  * @brief   Enclosure lexer API
  * 
  * @author  BP Harris
@@ -9,8 +9,8 @@
 #pragma once
 
 
-namespace Lexer {
+#include "Lexer/TestLexer.h"
 
-    __declspec(dllexport) void Lex();
 
-}
+// Include lexer files
+

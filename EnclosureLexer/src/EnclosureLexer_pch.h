@@ -1,5 +1,5 @@
 /**
- * @file    lexer_pch.h
+ * @file    EnclosureLexer_pch.h
  * @brief   Enclosure lexer precompiled headers.
  * 
  * @author  BP Harris
