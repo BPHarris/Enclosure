@@ -19,10 +19,6 @@ project "Enclosure"
     targetdir ("bin/"     .. outputdir .. "/%{prj.name}")
     objdir    ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-    -- Precompiled headers
-    pchheader "%{prj.name}_pch.h"
-    pchsource ("%{prj.name}/src/%{prj.name}_pch.cpp")
-
     files { "%{prj.name}/src/**.h", "%{prj.name}/src/**.cpp" }
 
     includedirs { 
@@ -36,6 +32,11 @@ project "Enclosure"
         cppdialect "C++17"
         staticruntime "On"
         systemversion "latest"
+
+        -- Precompiled headers
+        pchheader "%{prj.name}_pch.h"
+        pchsource ("%{prj.name}/src/%{prj.name}_pch.cpp")
+
         defines { "ENC_PLATFORM_WINDOWS" }
     
     filter "system:linux"
