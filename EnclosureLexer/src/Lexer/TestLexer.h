@@ -5,9 +5,6 @@
 
 namespace Lexer {
 
-	class LEXER_API TestLexer
-	{
-		void Lex();
-	};
+	void LEXER_API Init();
 
 }

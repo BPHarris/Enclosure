@@ -5,9 +5,6 @@
 
 namespace Parser {
 
-	class PARSER_API TestParser
-	{
-		void Parse();
-	};
+	void PARSER_API Init();
 
 }

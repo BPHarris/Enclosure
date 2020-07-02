@@ -10,6 +10,7 @@
 
 // General
 #include <iostream>
+#include <memory>
 
 
 // Data Strcutures

@@ -10,7 +10,7 @@ project "EnclosureLexer"
 
     files { "src/**.h", "src/**.cpp" }
 
-    includedirs { "src/" }
+    includedirs { "src/", "../Vendor/include/spdlog/include/" }
 
     -- Copy lib on build
     postbuildcommands {

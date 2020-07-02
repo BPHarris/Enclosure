@@ -1,12 +1,15 @@
 #include "EnclosureLexer_pch.h"
 #include "TestLexer.h"
 
+#include "Lexer/Log.h"
+
 
 namespace Lexer {
 
-	void TestLexer::Lex()
+	void Init()
 	{
-
+		Log::Init();
+		LEXER_INFO("Success.");
 	}
 
 }

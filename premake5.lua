@@ -23,7 +23,8 @@ project "Enclosure"
 
     includedirs { 
         "EnclosureLexer/src/",
-        "EnclosureParser/src/"
+        "EnclosureParser/src/",
+        "Vendor/include/spdlog/include/"
     }
 
     links { "EnclosureLexer", "EnclosureParser" }

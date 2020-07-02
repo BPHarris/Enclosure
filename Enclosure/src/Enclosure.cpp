@@ -14,7 +14,8 @@
 
 int main(int argc, char** argv)
 {
-	std::cout << "Enclosure\n";
+	Lexer::Init();
+	Parser::Init();
 
 	while (true);
 

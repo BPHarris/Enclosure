@@ -1,5 +1,5 @@
 /**
- * @file    enclosure_pch.h
+ * @file    Enclosure_pch.h
  * @brief   Enclosure compiler precompiled headers.
  * 
  * @author  BP Harris
