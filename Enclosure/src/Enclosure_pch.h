@@ -6,6 +6,8 @@
  * @date    July 2020
  */
 
+#pragma once
+
 #include <iostream>
 
 // General
