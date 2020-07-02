@@ -16,6 +16,8 @@
 	#else
 		#define PARSER_API __declspec(dllimport)
 	#endif // ENC_BUILD_DLL
+#elif defined ENC_PLATFORM_LINUX
+	#define PARSER_API __attribute__ ((visibility ("default")))
 #else
-	#error EnclosureLexer only supports windows, thus far.
+	#error EnclosureParser only supports Windows/Linux, thus far.
 #endif // ENC_PLATFORM_WINDOWS
