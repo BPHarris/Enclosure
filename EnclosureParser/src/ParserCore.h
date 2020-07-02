@@ -15,9 +15,13 @@
 		#define PARSER_API __declspec(dllexport)
 	#else
 		#define PARSER_API __declspec(dllimport)
-	#endif // ENC_BUILD_DLL
-#elif defined ENC_PLATFORM_LINUX
+	#endif
+#endif
+
+#ifdef ENC_PLATFORM_LINUX
 	#define PARSER_API __attribute__ ((visibility ("default")))
-#else
+#endif
+
+#ifndef PARSER_API
 	#error EnclosureParser only supports Windows/Linux, thus far.
-#endif // ENC_PLATFORM_WINDOWS
+#endif

@@ -16,14 +16,14 @@ project "Enclosure"
     kind "ConsoleApp"
     language "C++"
 
-    targetdir ("bin/"     .. outputdir .. "/%{prj.name}")
-    objdir    ("bin-int/" .. outputdir .. "/%{prj.name}")
+    targetdir ("bin/"     .. outputdir .. "/%{prj.name}/")
+    objdir    ("bin-int/" .. outputdir .. "/%{prj.name}/")
 
     files { "%{prj.name}/src/**.h", "%{prj.name}/src/**.cpp" }
 
     includedirs { 
-        "EnclosureLexer/src",
-        "EnclosureParser/src"
+        "EnclosureLexer/src/",
+        "EnclosureParser/src/"
     }
 
     links { "EnclosureLexer", "EnclosureParser" }
